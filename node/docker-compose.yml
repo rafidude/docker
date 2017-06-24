@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nodeapp:
+    image: node
+    ports:
+      - "8090:8080"
+    volumes:
+      - .:/code
+    command: npm start
+    working_dir: /code
